@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <meta charset="UTF-8">
+    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
@@ -16,7 +17,7 @@
     background-attachment: fixed;
     
 }
-
+/* 
 header {
     background-color: #404140;
     color: #fff;
@@ -47,7 +48,7 @@ nav a {
 
 nav a:hover {
     color: #ffffff;
-}
+} */
 
 main {
     padding: 2rem;
@@ -359,25 +360,71 @@ body {
 
 
 
+
+.animated-button {
+  background-color: #d44a4a;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
+.animated-button:active {
+  transform: scale(0.95);
+}
+
     </style>
 </head>
-<body>
+<body >
+  
   <div class="loading-screen">
     <div class="loading-spinner"></div>
   </div>
     <!--Home page start-->
     
-        <header class="heading rounded-1">
-            <h1 class="header">Vasoya Parth</h1>
-            <nav>
-                <ul>
-                    <li><a class="button" href="#about">About</a></li>
-                    <li><a class="button" href="#skills">Skills</a></li>
-                    <li><a class="button" href="#contact">Contact</a></li>
-                    <li><a class="button" href="#projects">Projects</a></li>
-                </ul>
-            </nav>
-        </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Vasoya Parth</a>
+        
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link animated-button" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animated-button" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animated-button" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animated-button" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/vasoya-parth-82a69224b"><img src="img/linkedin.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/ii_vasoya_parth_ii/"><img src="img/instagram (2).png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/@vasoyaparth"><img src="img/youtube.png"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08"><img src="img/twitter.png"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     
         <main>
         
@@ -386,9 +433,9 @@ body {
                 <div class="container">
                   <div class="about-me">
                       <img src="https://media.licdn.com/dms/image/D4D03AQGvPC7N9tbkdA/profile-displayphoto-shrink_800_800/0/1672027817615?e=2147483647&v=beta&t=JnKSK_RqbQpeJIciwVVV2MCylvZHflzg4p9BQqnSZwk" alt="Profile Picture" class="profile-image">
-                      <h2 class="text-white">Vasoya Parth</h2>
-                      <p class="lead text-white">Web Developer &amp; Designer</p>
-                      <p class="text-white">Hello, I am vasoya parth student of Darshan University of b.tech, cse, semester - 3 and i have a idea to make a website using html, css, javascript </p>  
+                      <h2 class="text-white fs-1">Vasoya Parth</h2>
+                      <p class="lead text-white fs-3">Web Developer &amp; Designer</p>
+                      <p class="text-white fs-5">Hello, I am vasoya parth student of Darshan University of b.tech, cse, semester - 3 and i have a idea to make a website using html, css, javascript </p>  
                     </div>
               </div>
               </section>
@@ -419,48 +466,46 @@ body {
 
             </section>
           </br>
-        </br>
-      </br>
-            <section id="contact" class="text-white bg-danger rounded-4">
-                <h2 class="sectionheading">Contact</h2>
-                <div class="contact-info">
-                    <p><strong>Email:</strong>vasoya421@gmail.com</p>
-                    <p><strong>Phone:</strong> +91 76228 27022</p>
-                    <p><strong>Location:</strong> Kalavad - Jamnagar, Gujarat, India</p>
-                </div>
-             </section>
-            </main>
-                 
-            
-          </br></br></br>
-            <section id="projects" class="projects-section bg-body-secondary m-4 rounded-4">
+            <section id="projects" class="projects-section bg-body-secondary  rounded-4">
               <h2 class="section-heading">My Projects</h2>
               <div class="project-container">
                 <div class="project-card">
                   <img src="img/calculatorui.png" alt="Project 1">
                   <div class="project-details">
                     <h3>Calculator Using JavaScript</h3>
-                    <p>Here, i make a calculator using a html, css, javascript, ui create using html and css and functions and calculate them in the javascript.also add a sound when button cliked and also a hover effect differant with button.</p>
+                    <p>Here, I make a calculator using a html, css, javascript, ui create using html and css and functions and calculate them in the javascript.also add a sound when button cliked and also a hover effect differant with button.</p>
                   </div>
                 </div>
                 <div class="project-card">
-                  <img src="project2-thumbnail.jpg" alt="Project 2">
+                  <img src="img/snake.png" alt="Project 2">
                   <div class="project-details">
-                    <h3>Project 2 Title</h3>
-                    <p>Phasellus interdum enim vel aliquam luctus. Duis malesuada quam eget est rhoncus rutrum.</p>
+                    <h3>Sanke Game</h3>
+                    <p>Here, I make a snake game like u can play game using a key (A, S, W, D), nd eat a apple and also a score are increase when eat and new location of apples are generated automaticlly.</p>
                   </div>
                 </div>
                 <div class="project-card">
-                  <img src="project3-thumbnail.jpg" alt="Project 3">
+                  <img src="img/loginpage.png" alt="Project 3">
                   <div class="project-details">
-                    <h3>Project 3 Title</h3>
-                    <p>Suspendisse euismod metus id nisl convallis, non convallis arcu interdum.</p>
+                    <h3>LoginPage With Validations</h3>
+                    <p>Here, I make a login page with validation using a javascript regular expression, and using a function to validate data, it's also a animated form with store data in cloud with full safety.</p>
                   </div>
                 </div>
               </div>
             </section>
             
+          </br>
 
+            <section id="contact" class="text-white bg-danger rounded-4">
+              <h2 class="sectionheading">Contact</h2>
+              <div class="contact-info">
+                  <p><strong>Email:</strong>vasoya421@gmail.com</p>
+                  <p><strong>Phone:</strong> +91 76228 27022</p>
+                  <p><strong>Location:</strong> Kalavad - Jamnagar, Gujarat, India</p>
+              </div>
+           </section>
+          </main>
+               
+          
         <footer>
             <p>&copy; 2023. All rights reserved.</p>
             
@@ -492,6 +537,7 @@ window.addEventListener('load', () => {
   loadingScreen.style.display = 'none';
   content.style.display = 'block';
 });
+
 
 </script>
   </body>
