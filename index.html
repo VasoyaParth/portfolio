@@ -383,57 +383,46 @@ body {
 .animated-button:active {
   transform: scale(0.95);
 }
-.waiting{
-  text-align: center;
-  font-style: italic;
-  font-weight: 900;
-  animation-name: pulsetext;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+
+
+.textalign{
+  text-align: justify;
 }
-@keyframes pulsetext {
-    0%{
-      font-size: 50px;
-      color: #d44a4a;
-    } 
-    50%{
-      font-size: 100px;
-      color:#ff0303
-    } 
-    100%{
-      font-size: 50px;
-      color: #d44a4a;
-    }
+
+
+@media screen and (max-width: 600px) {
+  .textjustify{
+    text-align: justify;
+    text-decoration: wavy;
+  }
 }
+
+
     </style>
 </head>
 <body >
   
   <div class="loading-screen">
-    <div class="waiting">Wait Almost There! </div>
-    <br/>
-    <div></div>
-    <br/>
-    <div class="loading-spinner"></div>
+    <div class="loading-spinner "></div>
   </div>
     <!--Home page start-->
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 32px; height: 32px;"> Vasoya Parth</a>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 30px; height: 30px;">Vasoya Parth</a>
         
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link animated-button" href="#about">About</a>
+            <a class="nav-link animated-button button" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link animated-button" href="#skills">Skills</a>
+            <a class="nav-link animated-button button" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link animated-button" href="#projects">Projects</a>
+            <a class="nav-link animated-button button" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link animated-button" href="#contact">Contact</a>
+            <a class="nav-link animated-button button" href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -457,20 +446,20 @@ body {
         <main>
         
             <section id="about">
-                <h1 class="abouthead sectionheading">About</h1>
+                <h1 class="abouthead sectionheading text-decoration-underline">About</h1>
                 <div class="container">
                   <div class="about-me">
                       <img src="https://media.licdn.com/dms/image/D4D03AQGvPC7N9tbkdA/profile-displayphoto-shrink_800_800/0/1672027817615?e=2147483647&v=beta&t=JnKSK_RqbQpeJIciwVVV2MCylvZHflzg4p9BQqnSZwk" alt="Profile Picture" class="profile-image">
-                      <h2 class="text-white fs-1">Vasoya Parth</h2>
+                      <h2 class="text-white fs-1"><span style="color: #e74242;">I'm</span> Vasoya Parth</h2>
                       <p class="lead text-white fs-3">Web Developer &amp; Designer</p>
-                      <p class="text-white fs-5">Hello, I am vasoya parth student of Darshan University of b.tech, cse, semester - 3 and i have a idea to make a website using html, css, javascript </p>  
+                      <p class="text-white fs-5 textjustify">Hello, I am vasoya parth student of Darshan University of b.tech, cse, semester - 3 and i have a idea to make a website using html, css, javascript </p>  
                     </div>
               </div>
               </section>
             </section>
           </br></br></br>
             <section id="skills">
-                <h2 class="sectionheading">Skills</h2>
+                <h2 class="sectionheading text-decoration-underline">Skills</h2>
                 <div class="skill text-dark">
                     <h3 class="">Web Development</h3>
                     <ul>
@@ -495,27 +484,29 @@ body {
             </section>
           </br>
             <section id="projects" class="projects-section bg-body-secondary  rounded-4">
-              <h2 class="section-heading">My Projects</h2>
+              <h2 class="section-heading sectionheading text-dark fw-bolder fs-1 text-decoration-underline">My Projects</h2>
               <div class="project-container">
                 <div class="project-card">
+                 
                   <img src="img/calculatorui.png" alt="Project 1">
-                  <div class="project-details">
+                  <div class="project-details ">
                     <h3>Calculator Using JavaScript</h3>
-                    <p>Here, I make a calculator using a html, css, javascript, ui create using html and css and functions and calculate them in the javascript.also add a sound when button cliked and also a hover effect differant with button.</p>
+                    <p class="textalign">Here, I make a calculator using a html, css, javascript, ui create using html and css and functions and calculate them in the javascript.also add a sound when button cliked and also a hover effect differant with button.</p>
                   </div>
+            
                 </div>
                 <div class="project-card">
                   <img src="img/snake.png" alt="Project 2">
-                  <div class="project-details">
+                  <div class="project-details ">
                     <h3>Sanke Game</h3>
-                    <p>Here, I make a snake game like u can play game using a key (A, S, W, D), nd eat a apple and also a score are increase when eat and new location of apples are generated automaticlly.</p>
+                    <p class="textalign">Here, I make a snake game like u can play game using a key (A, S, W, D), nd eat a apple and also a score are increase when eat and new location of apples are generated automaticlly.</p>
                   </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card ">
                   <img src="img/loginpage.png" alt="Project 3">
                   <div class="project-details">
                     <h3>LoginPage With Validations</h3>
-                    <p>Here, I make a login page with validation using a javascript regular expression, and using a function to validate data, it's also a animated form with store data in cloud with full safety.</p>
+                    <p class="textalign">Here, I make a login page with validation using a javascript regular expression, and using a function to validate data, it's also a animated form with store data in cloud with full safety.</p>
                   </div>
                 </div>
               </div>
@@ -523,6 +514,9 @@ body {
             
           </br>
 
+          
+
+          <br/>
             <section id="contact" class="text-white bg-danger rounded-4">
               <h2 class="sectionheading">Contact</h2>
               <div class="contact-info">
@@ -544,17 +538,8 @@ body {
     
 
     <!--Home page End-->
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <scrip src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <scrip src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"/>
 
 <script>
 window.addEventListener('load', () => {
