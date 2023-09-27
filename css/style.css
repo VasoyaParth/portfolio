@@ -1,0 +1,502 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://th.bing.com/th/id/R.462bf1f4c6cc54ae1b0df8dc5f8fad09?rik=MCLd%2b3G7TKiV%2bg&riu=http%3a%2f%2floft14design.com%2fimages%2fbg_portfolio_greybrick.jpg&ehk=J93%2fiRlKP5F2x19qWMigSoaM5Ef1qM5PXu8Ee2p6tuE%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+/* 
+header {
+    background-color: #404140;
+    color: #fff;
+    padding-bottom: .1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+} */
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #404140;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* CSS animations and effects */
+
+/* Example of a simple fade-in effect on section elements */
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Example of a zoom-in effect on images */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Example of a pulsing effect on a button */
+.button {
+    background-color: #e74242;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+   
+    
+}
+.button:hover{
+  background-color: #e74260;
+  transform: scale(2);
+}
+
+
+
+/* Add this CSS to style the "Skills" section */
+#skills {
+    padding: 2rem 0;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.skill ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Additional styling to make the section look more appealing */
+#skills {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill {
+    padding: 1rem;
+}
+
+.skill:nth-child(odd) {
+    background-color: #fff;
+}
+
+.skill:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Add this CSS to style the "Contact" section */
+#contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+
+body {
+            font-family: Arial, sans-serif;
+        }
+
+        .about-me {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 20px rgb(255, 253, 253);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform:scale(1.3);
+            box-shadow: 2px 1px 20px rgb(255, 255, 255);
+            cursor: pointer;
+
+        }
+
+        .profile-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .profile-text.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .abouthead{
+          text-align: center;
+          color: white;
+        }
+        .header{
+          margin-bottom: .5%;
+        }
+
+        .heading{
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+        .color{
+          color: white;
+        }
+        .sectionheading{
+          font-size: 50px;
+        }
+
+        .projects-section {
+  padding: 50px;
+}
+
+.section-heading {
+  text-align: center;padding: 2rem 0;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-card {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg,blue,pink );
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.loading-spinner {
+  border: 5px solid #f84f4f;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Add rotation animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: none; /* Hide content initially, show after loading */
+}
+
+
+
+
+.animated-button {
+  background-color: #d44a4a;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
+.animated-button:active {
+  transform: scale(0.95);
+}
+
+
+.textalign{
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 600px) {
+  .textjustify{
+    text-align: justify;
+    text-decoration: wavy;
+  }
+}
+
+
+
+/* Reset some default styles */
+<!-- * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} -->
+
+/* Style the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+/* Style the logo and website name */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.website-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Style the navigation links */
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+/* Style the social media links */
+.social-links a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.social-links img:hover {
+  opacity: 1;
+}
+
+/* Add styles for the mobile menu button */
+.mobile-menu-btn {
+    display: none;
+}
+
+#menu-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        scroll-behavior: smooth;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    #menu-button {
+        margin-top: 20px;
+    }
+}
+
+
