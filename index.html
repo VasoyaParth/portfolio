@@ -1,141 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vasoya Parth</title>
+    <title>Vasoya Parth - Portfolio</title>
     <link rel="icon" href="img/logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/style.css">
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
-  
-  <div class="loading-screen">
-    <div class="loading-spinner "></div>
-  </div>
-    <!--Home page start-->
-    <div class="navbar">
-      <div class="logo">
-          <img src="./img/logo.png" alt="Logo">
-          <a href="#" class="website-name"><span class="website-name">Vasoya Parth</span></a>
-      </div>
-      <div class="mobile-menu-btn">
-          <button id="menu-button">&#9776; Menu</button>
-      </div>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="social-links">
-          <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08"><img src="./img/twitter.png" alt="Twitter"></a>
-          <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://www.instagram.com/ii_vasoya_parth_ii/"><img src="./img/instagram (2).png" alt="Instagram"></a>
-          <a href="https://www.youtube.com/@vasoyaparth"><img src="./img/youtube.png" alt="YouTube"></a>
-      </div>
-  </div>
-  <script src="./script/script.js"></script>
-        <main>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo" width="40" height="40"> Vasoya Parth</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ii_vasoya_parth_ii/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@vasoyaparth"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class=" pt-5">
+        <!-- Home Section -->
+        <section id="home" class="py-5 bg-light">
+            <div class="container text-center">
+                <h1 class="display-3">Welcome to My Portfolio</h1>
+                <p class="lead">Explore my projects, skills, and contact information below.</p>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
         
-            <section id="about">
-                <h1 class="abouthead sectionheading text-decoration-underline">About</h1>
-                <div class="container">
-                  <div class="about-me">
-                      <img src="https://media.licdn.com/dms/image/D4D03AQGvPC7N9tbkdA/profile-displayphoto-shrink_800_800/0/1672027817615?e=2147483647&v=beta&t=JnKSK_RqbQpeJIciwVVV2MCylvZHflzg4p9BQqnSZwk" alt="Profile Picture" class="profile-image">
-                      <h2 class="text-white fs-1"><span style="color: #e74242;">I'm</span> Vasoya Parth</h2>
-                      <p class="lead text-white fs-3">Web Developer &amp; Designer</p>
-                      <p class="text-white fs-5 textjustify">Hello, I am vasoya parth student of Darshan University of b.tech, cse, semester - 5 and i have a idea to make a website using html, css, javascript </p>  
+        <section id="about-me" class=" py-5">
+            <div class="container text-center">
+                <h2 class="section-heading text-decoration-underline">About Me</h2>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-12 ">
+                        <div class="about-card card rounded-3 shadow-lg p-4 w-100">
+                            <img src="https://avatars.githubusercontent.com/u/114482213?v=4" alt="Profile Picture"
+                                class="about-card-img card-img-top rounded-circle mx-auto d-block mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Vasoya Parth</h3>
+                                <p class="card-text">I am currently in semester 5 pursuing B.Tech in Computer Science</p>
+                            </div>
+                        </div>
                     </div>
-              </div>
-              </section>
-            </section>
-          </br></br></br>
-            <section id="skills">
-                <h2 class="sectionheading text-decoration-underline">Skills</h2>
-                <div class="skill text-dark">
-                    <h3 class="">Web Development</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-
-                    </ul>
                 </div>
-                <div class="skill">
-                    <h3>Graphic Design</h3>
-                    <ul>
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Figma</li>
+            </div>
+        </section>
 
-                    </ul>
+        <!-- Skills Section -->
+        <section id="skills" class=" bg-light">
+            <div class="container text-center">
+                <h2 class="section-heading text-decoration-underline">Skills</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <h3>Frontend Development</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-html5 skill-icon"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt skill-icon"></i> CSS</li>
+                            <li><i class="fab fa-js skill-icon"></i> JavaScript</li>
+                            <li><i class="fab fa-react skill-icon"></i> React</li>
+                            <li><i class="fab fa-angular skill-icon"></i> Angular</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Mobile Development</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fab-flute  skill-icon"></i> Flutter</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Graphic Design</h3>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-adobe skill-icon"></i> Photoshop</li>
+                            <li><i class="fab fa-figma skill-icon"></i> Figma</li>
+                        </ul>
+                    </div>
                 </div>
-              
-              </section>
+            </div>
+        </section>
 
-            </section>
-          </br>
-            <section id="projects" class="projects-section bg-body-secondary  rounded-4">
-              <h2 class="section-heading sectionheading text-dark fw-bolder fs-1 text-decoration-underline">My Projects</h2>
-              <div class="project-container">
-                <div class="project-card">
-                 
-                  <img src="img/calculatorui.png" alt="Project 1">
-                  <div class="project-details ">
-                    <h3>Calculator Using JavaScript</h3>
-                    <p class="textalign">Here, I make a calculator using a html, css, javascript, ui create using html and css and functions and calculate them in the javascript.also add a sound when button cliked and also a hover effect differant with button.</p>
-                  </div>
-            
-                </div>
-                <div class="project-card">
-                  <img src="img/snake.png" alt="Project 2">
-                  <div class="project-details ">
-                    <h3>Sanke Game</h3>
-                    <p class="textalign">Here, I make a snake game like u can play game using a key (A, S, W, D), nd eat a apple and also a score are increase when eat and new location of apples are generated automaticlly.</p>
-                  </div>
-                </div>
-                <div class="project-card ">
-                  <img src="img/loginpage.png" alt="Project 3">
-                  <div class="project-details">
-                    <h3>LoginPage With Validations</h3>
-                    <p class="textalign">Here, I make a login page with validation using a javascript regular expression, and using a function to validate data, it's also a animated form with store data in cloud with full safety.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-          </br>
-
-          
-
-          <br/>
-            <section id="contact" class="text-white bg-danger rounded-4">
-              <h2 class="sectionheading">Contact</h2>
-              <div class="contact-info">
-                  <p><strong>Email:</strong>vasoya421@gmail.com</p>
-                  <p><strong>Phone:</strong> +91 76228 27022</p>
-                  <p><strong>Location:</strong> Kalavad - Jamnagar, Gujarat, India</p>
-              </div>
-           </section>
-          </main>
-               
-          
-        <footer>
-            <p>&copy; 2023. All rights reserved.</p>
-            
-        </footer>
+        <section id="projects" class="py-5 p-5 mt-5">
+            <div class="container text-center">
+                <h2 class="section-heading text-decoration-underline">Projects</h2>
+                <div class="row mt-4">
+                    <!-- Project 1: Gamestreet.com (React.js) -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" style="width: 100%; height: 100%;">
+                            <img src="img/gamestreet.png" alt="Gamestreet.com" class="card-img-top project-img"
+                                 data-modal-image="img/gamestreet.png" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">Gamestreet.com</h3>
+                                <p class="card-text">Online game Store using React.js for dynamic web experience and NodeJS and MongoDB for backend. Has both Admin and User roles.</p>
+                            </div>
+                        </div>
+                    </div>
         
-    </body>
-    </html>
-    
+                    <!-- Project 2: Calculator -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" style="width: 100%; height: 100%;">
+                            <img src="img/calculatorui.png" alt="Calculator UI" class="card-img-top project-img"
+                                 data-modal-image="img/calculatorui.png" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">Calculator UI</h3>
+                                <p class="card-text">A user-friendly calculator interface designed with modern aesthetics.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 3: Registration Page -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" style="width: 100%; height: 100%;">
+                            <img src="img/Registration.png" alt="Registration Page" class="card-img-top project-img"
+                                 data-modal-image="img/Registration.png" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">Registration Page</h3>
+                                <p class="card-text">An interactive Registration page with sleek design and easy navigation. with the fast and secure data storage system.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 4: Snake Game -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" style="width: 100%; height: 100%;">
+                            <img src="img/snake.png" alt="Snake Game" class="card-img-top project-img"
+                                 data-modal-image="img/snake.png" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">Snake Game</h3>
+                                <p class="card-text">Classic snake game implemented using HTML, CSS, and JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 5: Flutter Password Manager App -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" style="width: 100%; height: 100%;">
+                            <img src="img/FlutterPasswordManagerApp.jpg" alt="Flutter Password Manager App" class="card-img-top project-img"
+                                 data-modal-image="img/FlutterPasswordManagerApp.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h3 class="card-title">Flutter Password Manager App</h3>
+                                <p class="card-text">Secure password management app built using Flutter for mobile devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Full-screen Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close ">&times;</span>
+                    <span class="modal-close-text text-dark">Close</span>
+                    <img class="modal-image" id="modal-img">
+                </div>
+            </div>
+        
+            <style>
+                .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 9999;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    overflow: auto;
+                }
+        
+                .modal-content {
+                    position: relative;
+                    margin: auto;
+                    display: block;
+                    width: 80%;
+                    max-width: 1250px;
+                    max-height: 80%;
+                    text-align: center;
+                    overflow: auto;
+                    cursor: pointer;
+                }
+        
+                .modal-image {
+                    width: 100%;
+                    height: auto;
+                    max-height: 100%;
+                    object-fit: contain;
+                    margin-top: 50px;
+                }
+        
+                .modal-close {
+                    position: absolute;
+                    top: 20%;
+                    right: 20%;
+                    font-size: 2rem;
+                    color: #fff;
+                    cursor: pointer;
+                    z-index: 99999;
+                    opacity: 0; /* Initially hidden */
+                    transition: opacity 0.3s ease;
+                }
+        
+                .modal-close-text {
+                    position: absolute;
+                    top: 25px;
+                    right: 60px;
+                    font-size: 1rem;
+                    color: #fff;
+                    cursor: pointer;
+                    z-index: 99999;
+                    opacity: 0; /* Initially hidden */
+                    transition: opacity 0.3s ease;
+                }
+        
+                .modal-close:hover,
+                .modal-close-text:hover {
+                    color: #ccc;
+                }
+        
+                .modal:hover .modal-close,
+                .modal:hover .modal-close-text {
+                    opacity: 1; /* Show close button on hover */
+                }
+        
+                @media (max-width: 768px) {
+                    .modal-content {
+                        width: 100%;
+                        max-width: none;
+                        max-height: 100%;
+                    }
+                }
+            </style>
+        
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const projectImages = document.querySelectorAll('.project-img');
+                    const modal = document.getElementById('modal');
+                    const modalImg = document.getElementById('modal-img');
+                    const modalClose = document.querySelector('.modal-close');
+                    const modalCloseText = document.querySelector('.modal-close-text');
+        
+                    projectImages.forEach(img => {
+                        img.addEventListener('click', function() {
+                            const imgSrc = img.getAttribute('data-modal-image');
+                            modalImg.src = imgSrc;
+                            modal.style.display = 'flex';
+                            document.body.style.overflow = 'hidden'; // Disable scrolling when modal is open
+                            modalCloseText.style.display = 'block'; // Show close text when modal is open
+                        });
+                    });
+        
+                    modalClose.addEventListener('click', closeModal);
+                    modalCloseText.addEventListener('click', closeModal);
+        
+                    function closeModal() {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto'; // Enable scrolling when modal is closed
+                        modalCloseText.style.display = 'none'; // Hide close text when modal is closed
+                    }
+        
+                    // Close modal if user clicks outside the modal content
+                    window.addEventListener('click', function(event) {
+                        if (event.target === modal) {
+                            closeModal();
+                        }
+                    });
+                });
+            </script>
+        
+        </section>
+        
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="section-heading text-decoration-underline">Contact Me</h2>
+                <p class="lead">Feel free to reach out to me through the following channels:</p>
+                <p>Email: <a href="mailto:vasoya421@gmail.com">vasoya421@gmail.com</a></p>
+                <p>Phone: <a href="tel:+917622827022">+91 7622827022</a></p>
+                <p>Address: Bhagavati Society, Dhoraji Road, Kalavad(Sheetla), Jamnagar, Gujarat, India - 361160</p>
+            </div>
+        </section>
 
-    <!--Home page End-->
-    
-   
-<script src="./script/script.js"></script>
+    </main>
 
-  </body>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <div class="container">
+            <div class="social-links mb-3">
+                <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ii_vasoya_parth_ii/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@vasoyaparth"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Vasoya Parth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Bootstrap and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+
+</body>
 </html>
+
