@@ -8,6 +8,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Custom CSS -->
     <link href="./CSS/style.css" rel="stylesheet">
     <style>
@@ -59,6 +61,46 @@
                 max-width: 400px;
             }
         }
+        /* Skill Card Styles */
+/* Skill Card Styles */
+.skill-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+/* Icon Styles */
+.skill-icon {
+    width: 2.5rem; /* Match the size of Font Awesome icons */
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #007bff; /* Color for Font Awesome icons */
+}
+
+
+/* Progress Bar Styles */
+.progress {
+    background-color: #333;
+    border-radius: 4px;
+    height: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #007bff; /* Blue color for the progress bar */
+    height: 100%;
+    border-radius: 4px;
+}
+
+
     </style>
 </head>
 <body>
@@ -68,7 +110,7 @@
             <div class="profile-container">
                 <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
                 <div class="profile-info">
-                    <h1 class="animated-name">Vasoya Parth</h1>
+                    <h1 class="animated-name"> Parth Vasoya </h1>
                 </div>
             </div>
         </div>
@@ -146,26 +188,27 @@
             <h3 class="section-subtitle">Mobile Development</h3>
             <div class="skills-section">
                 <div class="skill-card">
-                    <i class="fab fa-flutter"></i>
+                    <img src="./IMG/FlutterIcon.svg" class="skill-icon" alt="Flutter Icon">
                     <h4>Flutter</h4>
                     <div class="progress">
                         <div class="progress-bar" style="width: 80%;" role="progressbar"></div>
                     </div>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-android"></i>
+                    <i class="fab fa-android skill-icon"></i>
                     <h4>Android</h4>
                     <div class="progress">
                         <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
                     </div>
                 </div>
             </div>
+            
     
             <!-- Graphic Design -->
             <h3 class="section-subtitle">Graphic Design</h3>
             <div class="skills-section">
                 <div class="skill-card">
-                    <i class="fab fa-image"></i>
+                    <img src="./IMG/PhotoShop.svg" class="skill-icon" alt="Photoshop Icon">
                     <h4>Photoshop</h4>
                     <div class="progress">
                         <div class="progress-bar" style="width: 85%;" role="progressbar"></div>
