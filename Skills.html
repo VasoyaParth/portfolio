@@ -12,62 +12,7 @@
     <link href="./CSS/style.css" rel="stylesheet">
     <style>
         /* Sidebar Styles */
-        .sidebar {
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background: #333;
-            color: #fff;
-            overflow-y: auto;
-            transition: all 0.3s;
-        }
-        .sidebar-header {
-            padding: 1rem;
-            background: #444;
-            text-align: center;
-        }
-        .profile-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
-        }
-        .profile-info {
-            margin-top: 1rem;
-        }
-        .animated-name {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        .sidebar-content a {
-            display: block;
-            padding: 1rem;
-            color: #fff;
-            text-decoration: none;
-        }
-        .sidebar-content a:hover {
-            background: #444;
-        }
-        .sidebar-content .fa {
-            margin-right: 0.5rem;
-        }
-        .sidebar-footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 1rem;
-            background: #444;
-        }
-        #sidebar-toggle {
-            background: #fff;
-            color: #333;
-        }
+       
         /* Page Content Styles */
         .content-wrapper {
             margin-left: 250px;
@@ -87,48 +32,10 @@
                 transform: translateX(-100%);
             }
         }
-        /* Skills Section */
-        .skills-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .skill-card {
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 300px;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-            color: #e0e0e0;
-        }
-        .skill-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-        }
-        .skill-card i {
-            font-size: 3rem;
-            color: #e0e0e0;
-        }
-        .skill-card h4 {
-            margin: 15px 0;
-            font-size: 1.5rem;
-            color: #e0e0e0;
-        }
-        .progress {
-            height: 8px;
-            margin-top: 10px;
-        }
-        .progress-bar {
-            background-color: #007bff;
-        }
+       
         /* Footer Styles */
         .footer {
-            background-color: #343a40;
+            background-color: #1e1e1e;
             color: #ffffff;
             padding: 2rem 0;
             text-align: center;
@@ -155,8 +62,8 @@
     </style>
 </head>
 <body>
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
+     <!-- Sidebar -->
+     <div id="sidebar" class="sidebar">
         <div class="sidebar-header">
             <div class="profile-container">
                 <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
@@ -168,18 +75,20 @@
         <div class="sidebar-content">
             <a href="index.html" class="list-group-item"><i class="fa fa-home"></i> <span class="sidebar-text">Home</span></a>
             <a href="index.html#about" class="list-group-item"><i class="fa fa-user"></i> <span class="sidebar-text">About</span></a>
-            <a href="skills.html" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
+            <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
             <a href="#" class="list-group-item"><i class="fa fa-project-diagram"></i> <span class="sidebar-text">Projects</span></a>
             <a href="#" class="list-group-item"><i class="fa fa-certificate"></i><span class="sidebar-text">Certificate</span></a>
             <a href="index.html#contact" class="list-group-item"><i class="fa fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
         </div>
-        
         <div class="sidebar-footer">
             <button id="sidebar-toggle" class="btn btn-light btn-sm">
                 <i id="toggle-icon" class="fa fa-chevron-left"></i>
             </button>
-        </div>  
+        </div>
     </div>
+    
+
+
 
     <!-- Mobile Menu Button -->
     <div id="mobile-menu" class="d-block d-md-none">
@@ -191,9 +100,11 @@
     <!-- Page Content -->
     <div id="page-content-wrapper" class="content-wrapper">
         <section id="skills" class="section">
-            <h2 class="section-title text-center">Skills</h2>
+            <h2 class="section-title text-start">Skills</h2>
+    
+            <!-- Web Development -->
+            <h3 class="section-subtitle">Web Development</h3>
             <div class="skills-section">
-                <!-- Frontend Development -->
                 <div class="skill-card">
                     <i class="fab fa-html5"></i>
                     <h4>HTML</h4>
@@ -229,7 +140,11 @@
                         <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
                     </div>
                 </div>
-                <!-- Mobile Development -->
+            </div>
+    
+            <!-- Mobile Development -->
+            <h3 class="section-subtitle">Mobile Development</h3>
+            <div class="skills-section">
                 <div class="skill-card">
                     <i class="fab fa-flutter"></i>
                     <h4>Flutter</h4>
@@ -237,7 +152,18 @@
                         <div class="progress-bar" style="width: 80%;" role="progressbar"></div>
                     </div>
                 </div>
-                <!-- Graphic Design -->
+                <div class="skill-card">
+                    <i class="fab fa-android"></i>
+                    <h4>Android</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Graphic Design -->
+            <h3 class="section-subtitle">Graphic Design</h3>
+            <div class="skills-section">
                 <div class="skill-card">
                     <i class="fab fa-adobe"></i>
                     <h4>Photoshop</h4>
@@ -255,7 +181,7 @@
             </div>
         </section>
     </div>
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">

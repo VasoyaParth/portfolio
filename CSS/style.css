@@ -429,3 +429,96 @@ html {
         display: none; /* Hide the vertical line on mobile */
     }
 }
+
+
+/* Section Title Styles */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Section Subtitle Styles */
+.section-subtitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+/* Dark Mode Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Skill Card Styles */
+.skill-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    background-color: #333;
+    border-radius: 4px;
+    height: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1rem;
+    }
+}

@@ -13,31 +13,10 @@
     <!-- Custom CSS -->
     <link href="./CSS/style.css" rel="stylesheet">
     <style>
-        /* Ensuring equal height for columns */
-        .row-equal-height {
-            display: flex;
-        }
-        .row-equal-height > .col {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        /* Add some padding and margin for spacing */
-        .section {
-            padding: 2rem 0;
-        }
-        .section-title {
-            margin-bottom: 1rem;
-        }
-        /* Responsive adjustments */
-        @media (max-width: 767.98px) {
-            .row-equal-height {
-                flex-direction: column;
-            }
-        }
+       
         /* Footer Styles */
         .footer {
-            background-color: #343a40;
+            background-color: #1e1e1e;
             color: #ffffff;
             padding: 2rem 0;
             text-align: center;
@@ -54,29 +33,90 @@
 </head>
 <body>
     <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <div class="profile-container">
-                <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
-                <div class="profile-info">
-                    <h1 class="animated-name">Vasoya Parth</h1>
+    <div id="page-content-wrapper" class="content-wrapper">
+        <section id="skills" class="section">
+            <h2 class="section-title text-start">Skills</h2>
+            
+            <!-- Web Development -->
+            <h3 class="section-subtitle">Web Development</h3>
+            <div class="skills-section">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h4>HTML</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;" role="progressbar"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>CSS</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;" role="progressbar"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h4>JavaScript</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;" role="progressbar"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h4>React</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;" role="progressbar"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-angular"></i>
+                    <h4>Angular</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="sidebar-content">
-            <a href="#home" class="list-group-item"><i class="fa fa-home"></i> <span class="sidebar-text">Home</span></a>
-            <a href="#about" class="list-group-item"><i class="fa fa-user"></i> <span class="sidebar-text">About</span></a>
-            <a href="./Skills.html" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
-            <a href="#" class="list-group-item"><i class="fa fa-project-diagram"></i> <span class="sidebar-text">Projects</span></a>
-            <a href="#" class="list-group-item"><i class="fa fa-certificate"></i><span class="sidebar-text">Certificate</span></a>
-            <a href="#contact" class="list-group-item"><i class="fa fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
-        </div>
-        <div class="sidebar-footer">
-            <button id="sidebar-toggle" class="btn btn-light btn-sm">
-                <i id="toggle-icon" class="fa fa-chevron-left"></i>
-            </button>
-        </div>  
+            
+            <!-- Mobile Development -->
+            <h3 class="section-subtitle">Mobile Development</h3>
+            <div class="skills-section">
+                <div class="skill-card">
+                    <i class="fab fa-flutter"></i>
+                    <h4>Flutter</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;" role="progressbar"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-android"></i>
+                    <h4>Android</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Graphic Design -->
+            <h3 class="section-subtitle">Graphic Design</h3>
+            <div class="skills-section">
+                <div class="skill-card">
+                    <i class="fab fa-adobe"></i>
+                    <h4>Photoshop</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;" role="progressbar"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-figma"></i>
+                    <h4>Figma</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;" role="progressbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    
 
     <!-- Mobile Menu Button -->
     <div id="mobile-menu" class="d-block d-md-none">
