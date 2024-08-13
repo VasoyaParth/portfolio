@@ -1,0 +1,431 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color */
+    transition: background-color 0.3s, color 0.3s;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e1e1e; /* Slightly lighter dark color for sidebar */
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease; /* Smooth transition for width */
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure sidebar is above other content */
+}
+
+#sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    transition: width 0.3s;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.3s;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: width 0.3s, height 0.3s;
+    border: 3px solid #e0e0e0; /* Add a border for better visibility */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    filter: brightness(0.8); /* Add filter for dark mode */
+}
+
+.profile-info {
+    margin-top: 10px;
+    transition: opacity 0.3s;
+}
+
+.animated-name {
+    font-size: 2.5rem; /* Larger font size for the name */
+    margin: 0;
+    transition: opacity 0.3s, font-size 0.3s;
+    font-weight: bold; /* Bold text for emphasis */
+    color: #ffffff;
+}
+
+/* Sidebar Collapse */
+#sidebar.collapsed .profile-container {
+    opacity: 1;
+}
+
+#sidebar.collapsed .profile-img {
+    width: 50px;
+    height: 50px;
+}
+
+#sidebar.collapsed .profile-info {
+    display: none;
+}
+
+.sidebar-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #e0e0e0;
+    background-color: #121212;
+    transition: background-color 0.3s, padding 0.3s, box-shadow 0.3s;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.list-group-item:hover {
+    text-decoration: none;
+    background-color: #333;
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.list-group-item .fa {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: font-size 0.3s;
+}
+
+#sidebar.collapsed .list-group-item .fa {
+    font-size: 2rem;
+}
+
+.sidebar-text {
+    transition: opacity 0.3s;
+}
+
+#sidebar.collapsed .sidebar-text {
+    display: none;
+}
+
+.sidebar-footer {
+    padding: 10px;
+    border-top: 1px solid #444;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-toggle {
+    width: 100%;
+    border-top: 1px solid #444;
+    transition: background-color 0.3s;
+}
+
+#sidebar-toggle .fa {
+    transition: transform 0.3s;
+}
+
+#sidebar.collapsed #toggle-icon {
+    transform: rotate(180deg);
+}
+
+#page-content-wrapper {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Smooth transition for content adjustment */
+}
+
+#page-content-wrapper.collapsed {
+    margin-left: 80px;
+}
+
+/* Page Sections */
+.section {
+    margin-bottom: 40px;
+    scroll-behavior: smooth;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: #e0e0e0;
+    border-radius: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    background-color: #1e1e1e; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    width: 2px;
+    background: #333;
+    top: 0;
+    bottom: 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 30px;
+    background-color: #1e1e1e; /* Card background color for timeline */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -5px; /* Adjust the position to center the inner circle */
+    height: 10px;
+    width: 10px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.timeline-item h3 {
+    font-size: 1.75rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.timeline-item p {
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.timeline-item em {
+    color: #e0e0e0;
+    font-style: normal;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+        position: fixed;
+        z-index: 999; /* Ensure it's above other content */
+    }
+
+    #mobile-menu {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    #mobile-menu-toggle {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #page-content-wrapper {
+        margin-left: 0;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+        border-left: none;
+        border-bottom: 2px solid #333;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        height: 10px;
+        width: 10px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
+
+    /* Hide the sidebar collapse toggle button on mobile view */
+    #sidebar-toggle {
+        display: none;
+    }
+}
+
+.imageFilter {
+    box-shadow: 2px 4px 8px rgb(255, 255, 255); /* Shadow effect */
+}
+
+/* Education Section */
+#education {
+    padding: 40px 20px; /* Adjust padding for the section */
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 55px; /* Line position */
+    width: 2px;
+    background: #333;
+    top: 0;
+    bottom: 0;
+    z-index: 1; /* Ensure the line is behind the items */
+}
+
+/* Adjust the timeline item positioning */
+.timeline-item {
+    position: relative;
+    padding: 20px 20px 20px 60px; /* Add space for the dot */
+    margin-bottom: 30px; /* Space between timeline items */
+    background-color: #1e1e1e; /* Card background color for timeline */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+    z-index: 2; /* Ensure the items are above the line */
+}
+
+/* Lift effect on hover */
+.timeline-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Inner dot */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 20px; /* Adjust position of the dot */
+    left: 20px; /* Center the inner dot */
+    height: 12px;
+    width: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    z-index: 3; /* Ensure the dot is above the line */
+}
+
+/* Ensure the first dot is visible */
+.timeline-item:first-child::before {
+    top: 20px; /* Adjust top position to be visible */
+}
+
+/* Adjust line for connecting dots */
+.timeline::before {
+    background: #333;
+    width: 2px;
+}
+
+/* Mobile styles for the education section */
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 40px; /* Adjust padding for mobile */
+        border-left: none;
+        border-bottom: 2px solid #333;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        height: 12px;
+        width: 12px;
+        background-color: #e0e0e0;
+        border-radius: 50%;
+    }
+
+    .timeline::before {
+        display: none; /* Hide the vertical line on mobile */
+    }
+}
