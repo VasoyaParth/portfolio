@@ -11,6 +11,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+ 
 }
 
 /* Sidebar Styles */
@@ -521,4 +522,33 @@ body {
         max-width: none;
         margin-bottom: 1rem;
     }
+}
+/* Container for horizontal scrolling */
+.horizontal-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.horizontal-scroll {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 300px; /* Adjust width as needed */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Make sure images fit in the container */
+.horizontal-scroll > div {
+    display: inline-block;
 }
