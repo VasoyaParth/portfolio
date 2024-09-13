@@ -552,3 +552,189 @@ body {
 .horizontal-scroll > div {
     display: inline-block;
 }
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.certificate-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #121212;
+}
+
+.certificate-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Larger width for bigger card */
+    background-color: #1e1e1e; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    color: #f0f0f0; /* Light text color */
+}
+
+.certificate-image {
+    flex: 1 1 50%; /* Increased size for image visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer; /* Indicate image is clickable */
+}
+
+.certificate-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+.certificate-body {
+    flex: 1 1 50%; /* Adjusted to occupy half */
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certificate-body p {
+    font-size: 1.1rem;
+    color: #d4d4d4;
+    margin: 10px 0;
+}
+
+.certificate-body h2 {
+    font-size: 1.8rem;
+    color: #bb86fc;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.highlight {
+    color: #ff5252;
+    font-weight: bold;
+}
+
+/* Modal Popup for Image Zoom */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Adjust width for larger display */
+    max-width: 900px; /* Maximum size */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .certificate-content {
+        flex-direction: column;
+    }
+
+    .certificate-image,
+    .certificate-body {
+        flex: 1 1 100%;
+        padding: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+
+/* Container for horizontal scrolling */
+.horizontal-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0; /* Reduce padding if needed */
+}
+
+/* Adjust horizontal scroll items to ensure proper sizing */
+.horizontal-scroll {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center; /* Center items vertically if needed */
+}
+
+/* Adjust gallery image sizing */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 200px; /* Adjust width for smaller screens */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure images fit in the container */
+.horizontal-scroll > div {
+    display: inline-block;
+    margin-right: 10px; /* Add margin if needed for spacing */
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 767px) {
+    /* Ensure the horizontal scroll container works well on smaller screens */
+    .horizontal-scroll-container {
+        padding: 5px 0; /* Further reduce padding if necessary */
+    }
+
+    /* Adjust image size and container handling for mobile view */
+    .gallery-img {
+        max-width: 150px; /* Further adjust width for smaller devices */
+    }
+
+    .horizontal-scroll {
+        gap: 10px; /* Reduce gap between items if needed */
+    }
+}
+/* Gallery Image Styles */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 300px; /* Adjust width for desktop */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Enhanced Zoom Effect for Mobile */
+@media (max-width: 767px) {
+    .gallery-img {
+        max-width: 200px; /* Adjust width for mobile */
+        transition: transform 0.3s ease-in-out; /* Ensure zoom effect is smooth */
+    }
+
+    .gallery-img:hover {
+        transform: scale(1.1); /* Slightly larger zoom for better visibility */
+    }
+}
+

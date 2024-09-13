@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Add your own stylesheet link or internal styles here -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <style>
+            /* Footer Styles */
+            .footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffffff;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+        }
+        .footer a:hover {
+            color: #adb5bd;
+        }
+        /* Mobile Styles */
+        @media (max-width: 767.98px) {
+            .skills-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .skill-card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <!-- Sidebar -->
+   <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <div class="profile-container">
+            <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
+            <div class="profile-info">
+                <h1 class="animated-name"> Parth Vasoya </h1>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-content">
+        <a href="./index.html#home" class="list-group-item"><i class="fa fa-home"></i> <span class="sidebar-text">Home</span></a>
+        <a href="./index.html#about" class="list-group-item"><i class="fa fa-user"></i> <span class="sidebar-text">About</span></a>
+        <a href="./Skills.html" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
+        <a href="./Projects.html" class="list-group-item"><i class="fa fa-project-diagram"></i> <span class="sidebar-text">Projects</span></a>
+        <a href="#" class="list-group-item"><i class="fa fa-certificate"></i><span class="sidebar-text">Certificate</span></a>
+        <a href="./index.html#contact" class="list-group-item"><i class="fa fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
+    </div>
+    <div class="sidebar-footer">
+        <button id="sidebar-toggle" class="btn btn-light btn-sm">
+            <i id="toggle-icon" class="fa fa-chevron-left"></i>
+        </button>
+    </div>  
+</div>
+
+<!-- Mobile Menu Button -->
+<div id="mobile-menu" class="d-block d-md-none">
+    <button id="mobile-menu-toggle" class="btn btn-light">
+        <i class="fa fa-bars"></i>
+    </button>
+</div>
+    <!-- Page Content Wrapper -->
+    <div id="page-content-wrapper" class="page-content-wrapper">
+       
+
+        <!-- Certificate Section -->
+        <section class="certificate-section section">
+            <div class="certificate-content">
+                <div class="certificate-image">
+                    <img src="./IMG/Certificates/duhackathon.png" alt="Certificate Image" class="imageFilter">
+                </div>
+                <div class="certificate-body">
+                    <p>This Certificate is awarded to</p>
+                    <h2>Vasoya Parth</h2>
+                    <p>
+                        Student of Computer Science & Engineering has successfully participated in One Day Hackathon on
+                        <span class="highlight">"Web Development"</span>
+                    </p>
+                    <p>
+                        Organized by the Department of Computer Science & Engineering, Darshan University, Rajkot on 09th December 2023.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="certificate-section section">
+            <div class="certificate-content">
+                <div class="certificate-image">
+                    <img src="./IMG/Certificates/atmiya.png" alt="Certificate Image" class="imageFilter">
+                </div>
+                <div class="certificate-body">
+                    <p>This Certificate is awarded to</p>
+                    <h2>Vasoya Parth</h2>
+                    <p>
+                        Student of Computer Science & Engineering has actively participated in the<span class="highlight"> ANVESHANA - A NATIONAL LEVEL HACKATHON 2024 (36 Hours)</span> 
+                    </p>
+                    <p>
+                        Organized by Atmiya University, Rajkot on 10th & 11th September 2024.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+            <section class="certificate-section section">
+            <div class="certificate-content">
+                <div class="certificate-image">
+                    <img src="./IMG/Certificates/Python.png" alt="Certificate Image" class="imageFilter">
+                </div>
+                <div class="certificate-body">
+                    <p>This Certificate is awarded to</p>
+                    <h2>Vasoya Parth</h2>
+                    <p>
+                        For successfully completing the <span class="highlight">Python (Basics)</span> course
+                        on HackerRank.
+                    </p>
+                    <p>
+                        Awarded on 30th June 2024.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="certificate-section section">
+            <div class="certificate-content">
+                <div class="certificate-image">
+                    <img src="./IMG/Certificates/js.png" alt="Certificate Image" class="imageFilter">
+                </div>
+                <div class="certificate-body">
+                    <p>This Certificate is awarded to</p>
+                    <h2>Vasoya Parth</h2>
+                    <p>
+                        For successfully completing the <span class="highlight">JavaScript (Basics)</span> course
+                        on HackerRank.
+                    </p>
+                    <p>
+                        Awarded on 3th September 2023.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="certificate-section section">
+            <div class="certificate-content">
+                <div class="certificate-image">
+                    <img src="./IMG/Certificates/sql.png" alt="Certificate Image" class="imageFilter">
+                </div>
+                <div class="certificate-body">
+                    <p>This Certificate is awarded to</p>
+                    <h2>Vasoya Parth</h2>
+                    <p>
+                        For successfully completing the <span class="highlight">Sql (Basics)</span> course
+                        on HackerRank.
+                    </p>
+                    <p>
+                        Awarded on 3th September 2023.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+       
+
+        
+
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2024 Vasoya Parth. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@vasoyaparth" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/ii_vasoya_parth_ii/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Include your JavaScript file or internal script here -->
+    <script src="./JS/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

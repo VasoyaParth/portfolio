@@ -45,4 +45,20 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', function () {
         adjustSidebar();
     });
+
+    // Function to adjust certificate section if needed
+    function adjustCertificateSection() {
+        const certificateSection = document.querySelector('.certificate-section');
+        if (certificateSection) {
+            if (window.innerWidth <= 768) {
+                certificateSection.style.flexDirection = 'column';
+            } else {
+                certificateSection.style.flexDirection = 'row';
+            }
+        }
+    }
+
+    // Adjust certificate section on load and resize
+    adjustCertificateSection();
+    window.addEventListener('resize', adjustCertificateSection);
 });
