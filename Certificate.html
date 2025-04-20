@@ -2,203 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Page</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Add your own stylesheet link or internal styles here -->
-    <link rel="stylesheet" href="./CSS/style.css">
-    <style>
-            /* Footer Styles */
-            .footer {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .footer a {
-            color: #ffffff;
-            margin: 0 1rem;
-            font-size: 1.5rem;
-        }
-        .footer a:hover {
-            color: #adb5bd;
-        }
-        /* Mobile Styles */
-        @media (max-width: 767.98px) {
-            .skills-section {
-                flex-direction: column;
-                align-items: center;
-            }
-            .skill-card {
-                width: 100%;
-                max-width: 400px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6e7eeb, #f7a7a6);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: #f7a7a6;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .info-text {
+      font-size: 1.1rem;
+      color: #f7a7a6;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #f7a7a6;
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background: #f59899;
+    }
+
+    .loader {
+      border: 5px solid #f7a7a6;
+      border-top: 5px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 30px auto;
+      animation: spin 1s linear infinite;
+    }
+
+    /* Animation for spinning */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .timer {
+      font-size: 1.2rem;
+      color: #f7a7a6;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+  </style>
 </head>
 
 <body>
-   <!-- Sidebar -->
-   <div id="sidebar" class="sidebar">
-    <div class="sidebar-header">
-        <div class="profile-container">
-            <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
-            <div class="profile-info">
-                <h1 class="animated-name"> Parth Vasoya </h1>
-            </div>
-        </div>
-    </div>
-    <div class="sidebar-content">
-        <a href="./index.html#home" class="list-group-item"><i class="fa fa-home"></i> <span class="sidebar-text">Home</span></a>
-        <a href="./index.html#about" class="list-group-item"><i class="fa fa-user"></i> <span class="sidebar-text">About</span></a>
-        <a href="./Skills.html" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
-        <a href="./Projects.html" class="list-group-item"><i class="fa fa-project-diagram"></i> <span class="sidebar-text">Projects</span></a>
-        <a href="#" class="list-group-item"><i class="fa fa-certificate"></i><span class="sidebar-text">Certificate</span></a>
-        <a href="./index.html#contact" class="list-group-item"><i class="fa fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
-    </div>
-    <div class="sidebar-footer">
-        <button id="sidebar-toggle" class="btn btn-light btn-sm">
-            <i id="toggle-icon" class="fa fa-chevron-left"></i>
-        </button>
-    </div>  
-</div>
 
-<!-- Mobile Menu Button -->
-<div id="mobile-menu" class="d-block d-md-none">
-    <button id="mobile-menu-toggle" class="btn btn-light">
-        <i class="fa fa-bars"></i>
-    </button>
-</div>
-    <!-- Page Content Wrapper -->
-    <div id="page-content-wrapper" class="page-content-wrapper">
-       
+  <div class="container">
+    <h1>Almost There!</h1>
+    <p>It looks like you're looking for something cool. You're in the right place!</p>
+    <div class="loader"></div>
+    <p>We are redirecting you to the website now...</p>
+    <p class="info-text">Please hold on, this may take a few seconds.</p>
+    
+    <!-- Countdown timer -->
+    <p class="timer" id="timer">Redirecting in 5 seconds...</p>
+    
+    <button class="btn" onclick="redirectToSite()">Go Now</button>
+  </div>
 
-        <!-- Certificate Section -->
-        <section class="certificate-section section">
-            <div class="certificate-content">
-                <div class="certificate-image">
-                    <img src="./IMG/Certificates/duhackathon.png" alt="Certificate Image" class="imageFilter">
-                </div>
-                <div class="certificate-body">
-                    <p>This Certificate is awarded to</p>
-                    <h2>Vasoya Parth</h2>
-                    <p>
-                        Student of Computer Science & Engineering has successfully participated in One Day Hackathon on
-                        <span class="highlight">"Web Development"</span>
-                    </p>
-                    <p>
-                        Organized by the Department of Computer Science & Engineering, Darshan University, Rajkot on 09th December 2023.
-                    </p>
-                </div>
-            </div>
-        </section>
+  <script>
+    // Countdown timer logic
+    let timeLeft = 5;
+    const timerElement = document.getElementById('timer');
 
-        <section class="certificate-section section">
-            <div class="certificate-content">
-                <div class="certificate-image">
-                    <img src="./IMG/Certificates/atmiya.png" alt="Certificate Image" class="imageFilter">
-                </div>
-                <div class="certificate-body">
-                    <p>This Certificate is awarded to</p>
-                    <h2>Vasoya Parth</h2>
-                    <p>
-                        Student of Computer Science & Engineering has actively participated in the<span class="highlight"> ANVESHANA - A NATIONAL LEVEL HACKATHON 2024 (36 Hours)</span> 
-                    </p>
-                    <p>
-                        Organized by Atmiya University, Rajkot on 10th & 11th September 2024.
-                    </p>
-                </div>
-            </div>
-        </section>
+    const countdown = setInterval(() => {
+      timeLeft -= 1;
+      timerElement.textContent = `Redirecting in ${timeLeft} seconds...`;
 
-            <section class="certificate-section section">
-            <div class="certificate-content">
-                <div class="certificate-image">
-                    <img src="./IMG/Certificates/Python.png" alt="Certificate Image" class="imageFilter">
-                </div>
-                <div class="certificate-body">
-                    <p>This Certificate is awarded to</p>
-                    <h2>Vasoya Parth</h2>
-                    <p>
-                        For successfully completing the <span class="highlight">Python (Basics)</span> course
-                        on HackerRank.
-                    </p>
-                    <p>
-                        Awarded on 30th June 2024.
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="certificate-section section">
-            <div class="certificate-content">
-                <div class="certificate-image">
-                    <img src="./IMG/Certificates/js.png" alt="Certificate Image" class="imageFilter">
-                </div>
-                <div class="certificate-body">
-                    <p>This Certificate is awarded to</p>
-                    <h2>Vasoya Parth</h2>
-                    <p>
-                        For successfully completing the <span class="highlight">JavaScript (Basics)</span> course
-                        on HackerRank.
-                    </p>
-                    <p>
-                        Awarded on 3th September 2023.
-                    </p>
-                </div>
-            </div>
-        </section>
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+      }
+    }, 1000);
 
-        <section class="certificate-section section">
-            <div class="certificate-content">
-                <div class="certificate-image">
-                    <img src="./IMG/Certificates/sql.png" alt="Certificate Image" class="imageFilter">
-                </div>
-                <div class="certificate-body">
-                    <p>This Certificate is awarded to</p>
-                    <h2>Vasoya Parth</h2>
-                    <p>
-                        For successfully completing the <span class="highlight">Sql (Basics)</span> course
-                        on HackerRank.
-                    </p>
-                    <p>
-                        Awarded on 3th September 2023.
-                    </p>
-                </div>
-            </div>
-        </section>
+    // Simulate a redirect after 5 seconds
+    setTimeout(function () {
+      window.location.href = "https://vasoyaparth-portfolio.vercel.app/"; // Change this URL to your desired site
+    }, 5000);
 
-       
+    // Button to force immediate redirect
+    function redirectToSite() {
+      window.location.href = "https://vasoyaparth-portfolio.vercel.app/"; // Change this URL to your desired site
+    }
+  </script>
 
-        
-
-        
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>&copy; 2024 Vasoya Parth. All rights reserved.</p>
-                    <div class="social-links">
-                        <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@vasoyaparth" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/ii_vasoya_parth_ii/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Include your JavaScript file or internal script here -->
-    <script src="./JS/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
