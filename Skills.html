@@ -1,252 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - My Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6e7eeb, #f7a7a6);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
 
-    <!-- Custom CSS -->
-    <link href="./CSS/style.css" rel="stylesheet">
-    <style>
-        /* Sidebar Styles */
-       
-        /* Page Content Styles */
-        .content-wrapper {
-            margin-left: 250px;
-            padding: 2rem;
-        }
-        @media (max-width: 767.98px) {
-            .content-wrapper {
-                margin-left: 0;
-            }
-            #sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                transition: all 0.3s;
-            }
-            #sidebar.collapsed {
-                transform: translateX(-100%);
-            }
-        }
-       
-        /* Footer Styles */
-        .footer {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .footer a {
-            color: #ffffff;
-            margin: 0 1rem;
-            font-size: 1.5rem;
-        }
-        .footer a:hover {
-            color: #adb5bd;
-        }
-        /* Mobile Styles */
-        @media (max-width: 767.98px) {
-            .skills-section {
-                flex-direction: column;
-                align-items: center;
-            }
-            .skill-card {
-                width: 100%;
-                max-width: 400px;
-            }
-        }
-        /* Skill Card Styles */
-/* Skill Card Styles */
-.skill-card {
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    padding: 1rem;
-    width: 100%;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #e0e0e0;
-}
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      max-width: 500px;
+    }
 
-/* Icon Styles */
-.skill-icon {
-    width: 2.5rem; /* Match the size of Font Awesome icons */
-    height: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #007bff; /* Color for Font Awesome icons */
-}
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: #f7a7a6;
+    }
 
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
 
-/* Progress Bar Styles */
-.progress {
-    background-color: #333;
-    border-radius: 4px;
-    height: 0.5rem;
-    width: 100%;
-    margin-top: 0.5rem;
-}
+    .info-text {
+      font-size: 1.1rem;
+      color: #f7a7a6;
+      margin-top: 20px;
+    }
 
-.progress-bar {
-    background-color: #007bff; /* Blue color for the progress bar */
-    height: 100%;
-    border-radius: 4px;
-}
+    .btn {
+      padding: 15px 30px;
+      background: #f7a7a6;
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 30px;
+    }
 
+    .btn:hover {
+      background: #f59899;
+    }
 
-    </style>
+    .loader {
+      border: 5px solid #f7a7a6;
+      border-top: 5px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 30px auto;
+      animation: spin 1s linear infinite;
+    }
+
+    /* Animation for spinning */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .timer {
+      font-size: 1.2rem;
+      color: #f7a7a6;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+  </style>
 </head>
+
 <body>
-     <!-- Sidebar -->
-     <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <div class="profile-container">
-                <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
-                <div class="profile-info">
-                    <h1 class="animated-name"> Parth Vasoya </h1>
-                </div>
-            </div>
-        </div>
-        <div class="sidebar-content">
-            <a href="index.html" class="list-group-item"><i class="fa fa-home"></i> <span class="sidebar-text">Home</span></a>
-            <a href="index.html#about" class="list-group-item"><i class="fa fa-user"></i> <span class="sidebar-text">About</span></a>
-            <a href="#" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
-            <a href="./Projects.html" class="list-group-item"><i class="fa fa-project-diagram"></i> <span class="sidebar-text">Projects</span></a>
-            <a href="./Certificate.html" class="list-group-item"><i class="fa fa-certificate"></i><span class="sidebar-text">Certificate</span></a>
-            <a href="index.html#contact" class="list-group-item"><i class="fa fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
-        </div>
-        <div class="sidebar-footer">
-            <button id="sidebar-toggle" class="btn btn-light btn-sm">
-                <i id="toggle-icon" class="fa fa-chevron-left"></i>
-            </button>
-        </div>
-    </div>
-    
 
-
-
-    <!-- Mobile Menu Button -->
-    <div id="mobile-menu" class="d-block d-md-none">
-        <button id="mobile-menu-toggle" class="btn btn-light">
-            <i class="fa fa-bars"></i>
-        </button>
-    </div>
-
-    <!-- Page Content -->
-    <div id="page-content-wrapper" class="content-wrapper">
-        <section id="skills" class="section">
-            <h2 class="section-title text-start">Skills</h2>
+  <div class="container">
+    <h1>Almost There!</h1>
+    <p>It looks like you're looking for something cool. You're in the right place!</p>
+    <div class="loader"></div>
+    <p>We are redirecting you to the website now...</p>
+    <p class="info-text">Please hold on, this may take a few seconds.</p>
     
-            <!-- Web Development -->
-            <h3 class="section-subtitle">Web Development</h3>
-            <div class="skills-section">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h4>HTML</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%;" role="progressbar"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h4>CSS</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 85%;" role="progressbar"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js"></i>
-                    <h4>JavaScript</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;" role="progressbar"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h4>React</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 75%;" role="progressbar"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-angular"></i>
-                    <h4>Angular</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- Countdown timer -->
+    <p class="timer" id="timer">Redirecting in 5 seconds...</p>
     
-            <!-- Mobile Development -->
-            <h3 class="section-subtitle">Mobile Development</h3>
-            <div class="skills-section">
-                <div class="skill-card">
-                    <img src="./IMG/FlutterIcon.svg" class="skill-icon" alt="Flutter Icon">
-                    <h4>Flutter</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;" role="progressbar"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-android skill-icon"></i>
-                    <h4>Android</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;" role="progressbar"></div>
-                    </div>
-                </div>
-            </div>
-            
-    
-            <!-- Graphic Design -->
-            <h3 class="section-subtitle">Graphic Design</h3>
-            <div class="skills-section">
-                <div class="skill-card">
-                    <img src="./IMG/PhotoShop.svg" class="skill-icon" alt="Photoshop Icon">
-                    <h4>Photoshop</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 85%;" role="progressbar"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-figma"></i>
-                    <h4>Figma</h4>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%;" role="progressbar"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>&copy; 2024 Vasoya Parth. All rights reserved.</p>
-                    <div class="social-links">
-                        <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@vasoyaparth" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/ii_vasoya_parth_ii/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <button class="btn" onclick="redirectToSite()">Go Now</button>
+  </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="./JS/scripts.js"></script>
+  <script>
+    // Countdown timer logic
+    let timeLeft = 5;
+    const timerElement = document.getElementById('timer');
+
+    const countdown = setInterval(() => {
+      timeLeft -= 1;
+      timerElement.textContent = `Redirecting in ${timeLeft} seconds...`;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+      }
+    }, 1000);
+
+    // Simulate a redirect after 5 seconds
+    setTimeout(function () {
+      window.location.href = "https://vasoyaparth-portfolio.vercel.app/"; // Change this URL to your desired site
+    }, 5000);
+
+    // Button to force immediate redirect
+    function redirectToSite() {
+      window.location.href = "https://vasoyaparth-portfolio.vercel.app/"; // Change this URL to your desired site
+    }
+  </script>
+
 </body>
+
 </html>
