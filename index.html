@@ -1,166 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
-    <link rel="icon" href="IMG/logo.png" type="image/png">
-    <!-- Bootstrap CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6e7eeb, #f7a7a6);
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Custom CSS -->
-    <link href="./CSS/style.css" rel="stylesheet">
-    <style>
-       
-        /* Footer Styles */
-        .footer {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        .footer a {
-            color: #ffffff;
-            margin: 0 1rem;
-            font-size: 1.5rem;
-        }
-        .footer a:hover {
-            color: #adb5bd;
-        }
-    </style>
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+      color: #f7a7a6;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .info-text {
+      font-size: 1.1rem;
+      color: #f7a7a6;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #f7a7a6;
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background: #f59899;
+    }
+
+    .loader {
+      border: 5px solid #f7a7a6;
+      border-top: 5px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 30px auto;
+      animation: spin 1s linear infinite;
+    }
+
+    /* Animation for spinning */
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .timer {
+      font-size: 1.2rem;
+      color: #f7a7a6;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+  </style>
 </head>
+
 <body>
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <div class="profile-container">
-                <img src="./IMG/profile.jpg" alt="Profile Image" class="profile-img rounded-circle">
-                <div class="profile-info">
-                    <h1 class="animated-name"> Parth Vasoya </h1>
-                </div>
-            </div>
-        </div>
-        <div class="sidebar-content">
-            <a href="#home" class="list-group-item"><i class="fa fa-home"></i> <span class="sidebar-text">Home</span></a>
-            <a href="#about" class="list-group-item"><i class="fa fa-user"></i> <span class="sidebar-text">About</span></a>
-            <a href="./Skills.html" class="list-group-item"><i class="fa fa-cogs"></i> <span class="sidebar-text">Skills</span></a>
-            <a href="./Projects.html" class="list-group-item"><i class="fa fa-project-diagram"></i> <span class="sidebar-text">Projects</span></a>
-            <a href="./Certificate.html" class="list-group-item"><i class="fa fa-certificate"></i><span class="sidebar-text">Certificate</span></a>
-            <a href="#contact" class="list-group-item"><i class="fa fa-envelope"></i> <span class="sidebar-text">Contact</span></a>
-        </div>
-        <div class="sidebar-footer">
-            <button id="sidebar-toggle" class="btn btn-light btn-sm">
-                <i id="toggle-icon" class="fa fa-chevron-left"></i>
-            </button>
-        </div>  
-    </div>
 
-    <!-- Mobile Menu Button -->
-    <div id="mobile-menu" class="d-block d-md-none">
-        <button id="mobile-menu-toggle" class="btn btn-light">
-            <i class="fa fa-bars"></i>
-        </button>
-    </div>
+  <div class="container">
+    <h1>Almost There!</h1>
+    <p>It looks like you're looking for something cool. You're in the right place!</p>
+    <div class="loader"></div>
+    <p>We are redirecting you to the website now...</p>
+    <p class="info-text">Please hold on, this may take a few seconds.</p>
+    
+    <!-- Countdown timer -->
+    <p class="timer" id="timer">Redirecting in 5 seconds...</p>
+    
+    <button class="btn" onclick="redirectToSite()">Go Now</button>
+  </div>
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper" class="content-wrapper">
-        <div class="container-fluid">
-            <section id="home" class="section">
-                <div class="text-center">
-                    <h1 class="mt-4 mb-4">Welcome to My Portfolio</h1>
-                    <p class="lead">Hello! I'm Vasoya Parth, a passionate developer with expertise in creating dynamic and visually appealing web applications. Explore my work and learn more about me below.</p>
-                </div>
-            </section>
+  <script>
+    // Countdown timer logic
+    let timeLeft = 5;
+    const timerElement = document.getElementById('timer');
 
-            <section id="about" class="section">
-                <h2 class="section-title">About Me & Career Objective</h2>
-                <div class="row row-equal-height">
-                    <div class="col-md-6 mb-4">
-                        <div class="card mb-4 mt-2">
-                            <div class="card-body">
-                                <h3>About Me</h3>
-                                <p> Hello! I'm Vasoya Parth, a dedicated web developer specializing in React.js, Node.js, MongoDB, HTML/CSS, JavaScript, and Flutter. My portfolio showcases a range of projects, from dynamic online game stores and sleek calculator UIs to classic snake games and secure password managers developed with Flutter. I am passionate about creating intuitive and functional digital solutions that offer seamless user experiences. Connect with me on Twitter, LinkedIn, Instagram, and YouTube to explore more about my work and insights!</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>Career Objective</h3>
-                                <p>Passionate and proactive individual ready to bring a fresh perspective and hands-on expertise in Flutter, JavaScript, ReactJS, NodeJS, Express, etc. Eager to drive impactful results, foster a collaborative spirit, and tackle challenges head-on in a dynamic environment. Excited to contribute to World of The Software with a focus on growth and creative problem-solving with teamwork.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <img src="./IMG/Aboutmesidephoto.png" alt="About Me" class="imageFilter img-fluid rounded shadow-sm">
-                    </div>
-                </div>
-            </section>
+    const countdown = setInterval(() => {
+      timeLeft -= 1;
+      timerElement.textContent = `Redirecting in ${timeLeft} seconds...`;
 
-            <!-- Education Section -->
-            <section id="education" class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                            <h3>Darshan University, Rajkot</h3>
-                            <p><em>Present (2022 - 2026)</em></p>
-                            <p>B.Tech. – Computer Science Engineering | CGPA: 8.57/10.00</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                            <h3>Shree Tax Shilla Vidyalaya, Junagadh</h3>
-                            <p><em>2022</em></p>
-                            <p>12th (HSC) | GSEB</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon"></div>
-                        <div class="timeline-content">
-                            <h3>Shree Tax Shilla Vidyalaya, Junagadh</h3>
-                            <p><em>2020</em></p>
-                            <p>10th (SSC) | GSEB</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="contact" class="section">
-                <h2 class="section-title">Contact Information</h2>
-                <div class="contact-info">
-                    <h3>Feel free to reach out to me through the following channels:</h3><br />
-                    <p><i class="fa fa-envelope"></i> <a href="mailto:vasoya421@gmail.com">vasoya421@gmail.com</a></p>
-                    <p><i class="fa fa-phone"></i> <a href="tel:+917622827022">+91 7622827022</a></p>
-                </div>
-            </section>
-        </div>
-    </div>
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+      }
+    }, 1000);
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>&copy; 2024 Vasoya Parth. All rights reserved.</p>
-                    <div class="social-links">
-                        <a href="https://twitter.com/i_VasoyaPunit_i?t=I1NNGNvLE2Y6kcTp9yTqmw&s=08" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/vasoya-parth-82a69224b" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@vasoyaparth" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/ii_vasoya_parth_ii/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    // Simulate a redirect after 5 seconds
+    setTimeout(function () {
+      window.location.href = "https://vasoyaparth-portfolio.vercel.app/"; // Change this URL to your desired site
+    }, 5000);
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="./JS/scripts.js"></script>
+    // Button to force immediate redirect
+    function redirectToSite() {
+      window.location.href = "https://vasoyaparth-portfolio.vercel.app/"; // Change this URL to your desired site
+    }
+  </script>
+
 </body>
+
 </html>
